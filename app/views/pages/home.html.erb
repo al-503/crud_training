@@ -1,11 +1,19 @@
 <h1>Welcome to Rails CRUD boileplate</h1>
 
+<h2>ici index des restaurants</h2>
+
 <div class="restaurants-list">
 
   <% @restaurants.each do |r|%>
+
+    <%= link_to restaurants_path(r), class:"link" do %>
+
     <ul>
       <li><%= r.name %> / <%= r.speciality %></li>
     </ul>
+
+    <% end %>
+
   <% end %>
 
 </div>
