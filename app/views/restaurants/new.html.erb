@@ -1,0 +1,11 @@
+<h1>nouveau restaurant</h1>
+
+<%= simple_form_for(@restaurant) do |r| %>
+  <%= r.label :name %>
+  <%= r.text_field :name %>
+
+  <%= r.label :speciality %>
+  <%= r.text_field :speciality %>
+
+  <%= r.submit %>
+<% end %>

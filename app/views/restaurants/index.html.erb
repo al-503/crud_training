@@ -1,0 +1,18 @@
+<h2>ici index des restaurants</h2>
+
+
+<div class="restaurants-list">
+
+  <% @restaurants.each do |r|%>
+
+    <%= link_to restaurant_path(r), class:"link" do %>
+
+    <ul>
+      <li><%= r.name %> / <%= r.speciality %></li>
+    </ul>
+
+    <% end %>
+
+  <% end %>
+
+</div>
