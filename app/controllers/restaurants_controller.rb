@@ -21,6 +21,12 @@ skip_before_action :authenticate_user!, only: [ :index, :show ]
     redirect_to restaurants_path #redirige vers l index si ont veut rediriger vers le produit crée on lui passe la route associer
   end
 
+  def destroy
+    @restaurant = Restaurant.find(params[:id])
+    @restaurant.destroy
+    redirect_to restaurants_path
+  end
+
   private
 #ici les params requi pour les method qui modifie la db(create update delete)
   def restaurant_params

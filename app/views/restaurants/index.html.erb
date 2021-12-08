@@ -10,6 +10,12 @@
 
     <ul>
       <li><%= r.name %> / <%= r.speciality %></li>
+    <!--------------bouton supprimer------------------------->  
+      <%= link_to "effacer",
+                  restaurant_path(r),
+                  method: :delete,
+                  data: { confirm: "Supprimer ?" }, class:"btn btn-danger"%>
+
     </ul>
 
     <% end %>
