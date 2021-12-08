@@ -3,5 +3,10 @@
 <div class="restaurant">
   <ul>
     <li><%= @restaurant.name %></li>
+
+    <%= link_to "effacer",
+                  restaurant_path,
+                  method: :delete,
+                  data: { confirm: "Supprimer ?" }, class:"btn btn-danger"%>
   </ul>
 </div>
