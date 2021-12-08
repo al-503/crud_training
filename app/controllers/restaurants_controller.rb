@@ -26,6 +26,17 @@ skip_before_action :authenticate_user!, only: [ :index, :show ]
     @restaurant.destroy
     redirect_to restaurants_path
   end
+#edit et update vont ensemble
+  def edit
+    @restaurant = Restaurant.find(params[:id])
+  end
+
+  def update
+    @restaurant = Restaurant.find(params[:id])
+    @restaurant.update(restaurant_params)
+      
+    redirect_to restaurant_path(@restaurant)
+  end
 
   private
 #ici les params requi pour les method qui modifie la db(create update delete)
