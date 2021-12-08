@@ -1,2 +1,11 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Welcome to Rails CRUD boileplate</h1>
+
+<div class="restaurants-list">
+
+  <% @restaurants.each do |r|%>
+    <ul>
+      <li><%= r.name %> / <%= r.speciality %></li>
+    </ul>
+  <% end %>
+
+</div>
