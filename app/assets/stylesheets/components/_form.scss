@@ -1,0 +1,41 @@
+.form {
+  margin: 0 auto;
+  width: 30%;
+  height: 350px;
+  border-radius: 3%;
+  box-shadow: 1px 3px 3px gray;
+  background-color: white;
+}
+
+.form-input {
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  border-color: white;
+  box-shadow: none;
+}
+
+.label-naming {
+  color: black;
+  margin-top: 2%;
+}
+
+.input-case {
+  border-color: white;
+  border-radius: 5px;
+}
+
+.submit-button {
+  margin: auto;
+  background-color: rgb(91, 228, 91);
+  color: white;
+  border-radius: 5px;
+  &:hover{
+    color: white;
+  }
+}

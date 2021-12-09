@@ -1,10 +1,8 @@
-<div class="forms">
-  <%= form_for(@restaurant) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :speciality %>
-    <%= f.text_field :speciality %>
+<%= form_for(@restaurant) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :speciality %>
+  <%= f.text_field :speciality %>
 
-    <%= f.submit %>
-  <% end %>
-</div>
+  <%= f.submit %>
+<% end %>

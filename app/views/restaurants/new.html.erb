@@ -1,13 +1,23 @@
 <h1>nouveau restaurant</h1>
-<!------------pour une table avec liaison ont ecrira <%= simple_form_for [ @FirstTable, @DependTable ] do |fd| %> (voir exemple rails watch list)------------>
-<div class="forms">
-  <%= simple_form_for(@restaurant) do |r| %>
-    <%= r.label :name %>
-    <%= r.text_field :name %>
 
-    <%= r.label :speciality %>
-    <%= r.text_field :speciality %>
+<div class="form">
 
-    <%= r.submit %>
-  <% end %>
+    <%= simple_form_for(@restaurant) do |r| %>
+      <div class="form-input">
+        <%= r.label :name, class:"label-naming"%>
+        <%= r.text_field :name, class:"input-case" %>
+      </div>
+
+      <div class="form-input">
+        <%= r.label :speciality, class:"label-naming"%>
+        <%= r.text_field :speciality, class:"input-case"%>
+      </div>
+
+      <div class="form-input">
+        <%= r.button :submit, class:"submit-button" %>
+      </div>
+
+    <% end %>
+  
+
 </div>
