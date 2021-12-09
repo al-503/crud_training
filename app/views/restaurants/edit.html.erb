@@ -1,8 +1,19 @@
-<%= form_for(@restaurant) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :speciality %>
-  <%= f.text_field :speciality %>
+<div class="form">
 
-  <%= f.submit %>
-<% end %>
+  <%= form_for(@restaurant) do |r| %>
+    <div class="form-input">
+      <%= r.label :name, class:"label-naming"%>
+      <%= r.text_field :name, class:"input-case" %>
+    </div>
+
+    <div class="form-input">
+      <%= r.label :speciality, class:"label-naming"%>
+      <%= r.text_field :speciality, class:"input-case"%>
+    </div>
+
+    <div class="form-input">
+      <%= r.button :submit, class:"submit-button" %>
+    </div>
+
+  <% end %>
+</div>

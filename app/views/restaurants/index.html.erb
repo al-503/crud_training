@@ -11,10 +11,10 @@
     <ul>
       <li><%= r.name %> / <%= r.speciality %></li>
     <!--------------bouton supprimer------------------------->  
-      <%= link_to "effacer",
+      <%= link_to "",
                   restaurant_path(r),
                   method: :delete,
-                  data: { confirm: "Supprimer ?" }, class:"btn btn-danger"%>
+                  data: { confirm: "Supprimer ?" }, class:"fas fa-trash-alt"%>
 
     </ul>
 

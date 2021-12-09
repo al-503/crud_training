@@ -4,13 +4,13 @@
   <ul>
     <li><%= @restaurant.name %></li>
 
-    <%= link_to "effacer",
+    <%= link_to "",
                   restaurant_path,
                   method: :delete,
-                  data: { confirm: "Supprimer ?" }, class:"btn btn-danger"%>
+                  data: { confirm: "Supprimer ?" }, class:"fas fa-trash-alt"%>
                   
-    <%= link_to "modifier",
+    <%= link_to "",
                  edit_restaurant_path,
-                 class:"btn btn-danger" %>
+                 class:"fas fa-wrench" %>
   </ul>
 </div>
