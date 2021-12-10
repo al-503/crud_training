@@ -16,9 +16,13 @@ skip_before_action :authenticate_user!, only: [ :index, :show ]
   
   def create
     @restaurant = Restaurant.new(restaurant_params)
-    @restaurant.save
 
+    if @restaurant.save
     redirect_to restaurants_path #redirige vers l index si ont veut rediriger vers le produit crée on lui passe la route associer
+
+    else
+      render :new
+    end
   end
 
   def destroy

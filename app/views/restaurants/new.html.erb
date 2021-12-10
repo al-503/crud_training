@@ -5,12 +5,12 @@
     <%= simple_form_for(@restaurant) do |r| %>
       <div class="form-input">
         <%= r.label :name, class:"label-naming"%>
-        <%= r.text_field :name, class:"input-case" %>
+        <%= r.text_field :name, min:"2", maxlength:"20", class:"input-case" %>
       </div>
 
       <div class="form-input">
         <%= r.label :speciality, class:"label-naming"%>
-        <%= r.text_field :speciality, class:"input-case"%>
+        <%= r.text_field :speciality, maxlength:"20", class:"input-case"%>
       </div>
 
       <div class="form-input">
